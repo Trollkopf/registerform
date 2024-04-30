@@ -31,7 +31,7 @@ class Clientesweb extends Model
         'DP3CLI',
         'MESNPAG',
         'BANCLI',
-        'IBANCLI',
+        'PROPCLI',
         'MENSAJE',
         'OBSCLI',
     ];

@@ -9,6 +9,9 @@ class ClienteswebController extends Controller
 {
     public function store(Request $request)
     {
+
+        // dd($request);
+
         $this->validate(
             $request,
             [
@@ -27,7 +30,7 @@ class ClienteswebController extends Controller
                 'EMACLI' => "required | email | max:100",
                 'WEBCLI' => "max:60",
                 'FPACLI' => "required",
-                'IBANCLI' => "max:30",
+                'PROPCLI' => "max:500",
                 'MENSAJE' => "max:250",
                 'OBSCLI' => "max:500",
 
@@ -50,7 +53,7 @@ class ClienteswebController extends Controller
             'EMACLI' => $request->EMACLI,
             'WEBCLI' => $request->WEBCLI,
             'FPACLI' => $request->FPACLI,
-            'IBANCLI' => $request->IBANCLI,
+            'PROPCLI' => $request->PROPCLI,
             'DP1CLI' => $request->DP1CLI,
             'DP2CLI' => $request->DP2CLI,
             'MENSAJE' => $request->MENSAJE,
