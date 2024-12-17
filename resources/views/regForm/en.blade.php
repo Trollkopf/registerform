@@ -309,14 +309,16 @@
                 <div class="w-50 m-2">
                     <div class="btn-group @error('FPACLI') border border-danger border-5  @enderror" role="group"
                         aria-label="Basic checkbox toggle button group">
-                        <input type="radio" class="btn-check " name="FPACLI" id="transf_bancaria" value="transf_bancaria"
-                            autocomplete="off" />
-                        <label class="btn btn-outline-primary align-content-center " for="transf_bancaria">100% Pre payment by
+                        <input type="radio" class="btn-check " name="FPACLI" id="transf_bancaria"
+                            value="transf_bancaria" autocomplete="off" />
+                        <label class="btn btn-outline-primary align-content-center " for="transf_bancaria">100% Pre
+                            payment by
                             Bank transfer. Acording to PROFORMA INVOICE.</label>
 
                         <input type="radio" class="btn-check" name="FPACLI" id="propuesta" value="propuesta"
                             autocomplete="off" />
-                        <label class="btn btn-outline-primary align-content-center " for="propuesta">Client proposed payment method</label>
+                        <label class="btn btn-outline-primary align-content-center " for="propuesta">Client proposed
+                            payment method</label>
                     </div>
                 </div>
                 {{-- #################### PROPUESTA DEL CLIENTE #################### --}}
@@ -372,6 +374,23 @@
                 </button>
             </div>
         </form>
+
+        <div class="mt-4 px-4">
+            <p class=""><i>Thank you for your interest in joining our group of companies. In order to guarantee an
+                    efficient and professional experience from the first contact, we inform you that, as a policy of our
+                    company, it is essential to make a pre-payment on your first order to successfully complete the process
+                    of registration as a new customer.</i></p>
+            <p class=""><i>This requirement allows us to offer you an agile and reliable service from the beginning,
+                    establishing a commercial relationship based on transparency and mutual commitment.</i></p>
+            <p class=""><i>You will receive all the necessary documentation, including the proforma invoice, which
+                    details the products, conditions and amount of the order.</i></p>
+            <p class=""><i>Once the corresponding payment has been made, your order will be processed, we will
+                    proceed with the shipment and you will receive the registration confirmation together with the details
+                    of your order in an agile and efficient.</i></p>
+            <p class=""><i>Thank you in advance for your understanding and cooperation. If you have any questions or
+                    queries, please do not hesitate to contact us.</i></p>
+        </div>
+
     </div>
 @endsection
 

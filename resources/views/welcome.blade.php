@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('title')
-Registro StoneCloud
+    Registro StoneCloud
 @endsection
 
 @section('header')
@@ -345,19 +345,19 @@ Registro StoneCloud
             </div>
             <div class="d-flex justify-content-center">
                 <input type="text" class="form-control w-25 m-2 @error('TELCLI') border border-danger @enderror"
-                    placeholder="Telefono Principal*" name="TELCLI" id="TELCLI" value="{{  old('TELCLI') }}"/>
+                    placeholder="Telefono Principal*" name="TELCLI" id="TELCLI" value="{{ old('TELCLI') }}" />
                 <input type="text" class="form-control w-25 m-2 @error('TELF2') border border-danger @enderror"
-                    placeholder="Telefono 2" name="TELF2" id="TELF2" value="{{  old('TELF2') }}"/>
+                    placeholder="Telefono 2" name="TELF2" id="TELF2" value="{{ old('TELF2') }}" />
                 <input type="text" class="form-control w-25 m-2 @error('MOVIL') border border-danger @enderror"
-                    placeholder="Movil" name="MOVIL" id="MOVIL" value="{{  old('MOVIL') }}"/>
+                    placeholder="Movil" name="MOVIL" id="MOVIL" value="{{ old('MOVIL') }}" />
                 <input type="text" class="form-control w-25 m-2 @error('FAXCLI') border border-danger @enderror"
-                    placeholder="Fax" name="FAXCLI" id="FAXCLI" value="{{  old('FAXCLI') }}" />
+                    placeholder="Fax" name="FAXCLI" id="FAXCLI" value="{{ old('FAXCLI') }}" />
             </div>
             <div class="d-flex justify-content-center">
                 <input type="text" class="form-control w-50 m-2 @error('EMACLI') border border-danger @enderror"
-                    placeholder="Email*" name="EMACLI" id="EMACLI" value="{{ old('EMACLI') }}"/>
+                    placeholder="Email*" name="EMACLI" id="EMACLI" value="{{ old('EMACLI') }}" />
                 <input type="text" class="form-control w-50 m-2 @error('WEBCLI') border border-danger @enderror"
-                    placeholder="Web" name="WEBCLI" id="WEBCLI" value="{{  old('WEBCLI') }}"/>
+                    placeholder="Web" name="WEBCLI" id="WEBCLI" value="{{ old('WEBCLI') }}" />
             </div>
             <div class="container mt-2">
                 <h4>Forma de pago</h4>
@@ -390,11 +390,13 @@ Registro StoneCloud
                 <div class="w-50 m-2">
                     <input class="form-control m-2" type="text"
                         placeholder="IBAN  _ _ _ _ / _ _ _ _ _ _ _ /_ _ _ _ _ _ _ /_ _ _ _ _ _ _ /_ _ _ _ _ _ _ /_ _ _ _ _ _"
-                        name="IBANCLI" id="IBANCLI" value="{{  old('IBANCLI') }}">
+                        name="IBANCLI" id="IBANCLI" value="{{ old('IBANCLI') }}">
                     <div class="d-flex align-items-center justify-content-center ">
                         Días de pago:
-                        <input class="form-control m-2 w-25" type="text" placeholder="1" name="DP1CLI" id="DP1CLI" value="{{ old('DP1CLI') }}">
-                        <input class="form-control m-2 w-25" type="text" placeholder="2" name="DP2CLI" id="DP2CLI" value="{{ old('DP2CLI') }}">
+                        <input class="form-control m-2 w-25" type="text" placeholder="1" name="DP1CLI"
+                            id="DP1CLI" value="{{ old('DP1CLI') }}">
+                        <input class="form-control m-2 w-25" type="text" placeholder="2" name="DP2CLI"
+                            id="DP2CLI" value="{{ old('DP2CLI') }}">
                     </div>
                 </div>
             </div>
@@ -422,6 +424,21 @@ Registro StoneCloud
                 </button>
             </div>
         </form>
+        <div class="mt-4 px-4">
+            <p class=""><i>Le agradecemos su interés en formar parte de nuestro grupo de empresas. Para garantizar
+                    una experiencia eficiente y profesional desde el primer contacto, le informamos que, como política de
+                    nuestra empresa, es imprescindible realizar el pago previo en su primer pedido para completar
+                    exitosamente el proceso de alta como cliente.</i></p>
+            <p class=""><i>Este requisito nos permite ofrecerle un servicio ágil y confiable desde el inicio,
+                    estableciendo una relación comercial basada en la transparencia y el compromiso mutuo.</i></p>
+            <p class=""><i>Recibirá toda la documentación necesaria, incluyendo la factura proforma, que detalla los
+                    productos, condiciones y el importe del pedido.</i></p>
+            <p class=""><i>Una vez realizado el pago correspondiente, su solicitud será procesada, procederemos con
+                    el envío y recibirá la confirmación de alta junto con los detalles de su pedido de manera ágil y
+                    eficiente.</i></p>
+            <p class=""><i>Agradecemos de antemano su comprensión y cooperación. Si tiene alguna duda o consulta, no
+                    dude en contactarnos.</i></p>
+        </div>
     </div>
 @endsection
 

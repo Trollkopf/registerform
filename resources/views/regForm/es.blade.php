@@ -380,8 +380,8 @@
                 {{-- #################### PROPUESTA DEL CLIENTE #################### --}}
                 <div id="proposal" class="w-50 m-2">
                     <div class="m-2">
-                        <textarea class="form-control m-2 ms-0" type="text" placeholder="Propuesta del cliente"
-                            name="PROPCLI" id="PROPCLI" value="{{ old('PROPCLI') }}"></textarea>
+                        <textarea class="form-control m-2 ms-0" type="text" placeholder="Propuesta del cliente" name="PROPCLI"
+                            id="PROPCLI" value="{{ old('PROPCLI') }}"></textarea>
                     </div>
                     <script>
                         $(document).ready(function() {
@@ -430,6 +430,21 @@
                 </button>
             </div>
         </form>
+        <div class="mt-4 px-4">
+            <p class=""><i>Le agradecemos su interés en formar parte de nuestro grupo de empresas. Para garantizar
+                    una experiencia eficiente y profesional desde el primer contacto, le informamos que, como política de
+                    nuestra empresa, es imprescindible realizar el pago previo en su primer pedido para completar
+                    exitosamente el proceso de alta como cliente.</i></p>
+            <p class=""><i>Este requisito nos permite ofrecerle un servicio ágil y confiable desde el inicio,
+                    estableciendo una relación comercial basada en la transparencia y el compromiso mutuo.</i></p>
+            <p class=""><i>Recibirá toda la documentación necesaria, incluyendo la factura proforma, que detalla los
+                    productos, condiciones y el importe del pedido.</i></p>
+            <p class=""><i>Una vez realizado el pago correspondiente, su solicitud será procesada, procederemos con
+                    el envío y recibirá la confirmación de alta junto con los detalles de su pedido de manera ágil y
+                    eficiente.</i></p>
+            <p class=""><i>Agradecemos de antemano su comprensión y cooperación. Si tiene alguna duda o consulta, no
+                    dude en contactarnos.</i></p>
+        </div>
     </div>
 @endsection
 
